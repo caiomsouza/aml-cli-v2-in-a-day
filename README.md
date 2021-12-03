@@ -56,3 +56,9 @@ Run CIFAR-10 example
 ```
 az ml job create -f jobs/pipelines/cifar-10/job.yml --web --resource-group cliv2demo --workspace-name cliv2amldemo
 ```
+
+### Learn more
+https://github.com/Azure/azureml-examples <BR>
+https://caiomsouza.medium.com/azure-machine-learning-cli-2-0-v2-84fef15e7b9 <BR>
+https://techcommunity.microsoft.com/t5/azure-ai-blog/announcing-the-new-cli-and-arm-rest-apis-for-azure-machine/ba-p/2393447 <BR>
+  
