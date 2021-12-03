@@ -2,11 +2,20 @@
 
 ### Lab 1 - Install and set up the CLI (v2)
 
-Read the 
+Read this tutorial and follow the instructions
 https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-cli
 
+```
+az extension list
+az extension remove -n azure-cli-ml
+az extension remove -n ml
+az extension add -n ml -y
+az ml -h
+az extension update -n ml
+az login
+```
 
-Lab 1 - Set up Azure Machine Learning V2 
+### Lab 2 - Set up Azure Machine Learning V2 
 
 Read this tutorial and follow the instructions
 https://docs.microsoft.com/en-us/azure/machine-learning/how-to-train-cli
@@ -15,5 +24,38 @@ https://docs.microsoft.com/en-us/azure/machine-learning/how-to-train-cli
 https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-cli
 
 Lab 2 - Run end to end NYC example 
+
+
+git clone --depth 1 https://github.com/Azure/azureml-examples
+cd azureml-examples/cli
+
+# install and set up CLI 2
+## https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-cli
+az extension list
+az extension remove -n azure-cli-ml
+az extension remove -n ml
+az extension add -n ml -y
+az ml -h
+az extension update -n ml
+az login
+
+# create a resource group and location of resource
+az group create -n cliv2demo -l uksouth
+
+# And create a machine learning workspace:
+az ml workspace create -n cliv2amldemo -g cliv2demo -l uksouth
+
+#create compute
+az ml compute create -n cpu-cluster --type amlcompute --min-instances 0 --max-instances 8 --resource-group cliv2demo --workspace-name cliv2amldemo
+az ml compute create -n gpu-cluster --type amlcompute --min-instances 0 --max-instances 4 --size Standard_NC12 --resource-group cliv2demo --workspace-name cliv2amldemo
+
+
+# Run Hello world.yml
+
+az ml job create -f jobs/basics/hello-world.yml --web --resource-group cliv2demo --workspace-name cliv2amldemo
+
+az ml job create -f jobs/pipelines/nyc-taxi/job.yml --web --resource-group cliv2demo --workspace-name cliv2amldemo
+
+az ml job create -f jobs/pipelines/cifar-10/job.yml --web --resource-group cliv2demo --workspace-name cliv2amldemo
 
 
