@@ -2,7 +2,8 @@
 
 ### Lab 1 - Install and set up the CLI (v2)
 
-Read this tutorial and follow the instructions: https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-cli
+Read this tutorial and follow the instructions:<BR> 
+https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-cli<BR>
 
 ```
 az extension list
@@ -16,7 +17,8 @@ az login
 
 ### Lab 2 - Run Azure Machine Learning CLI V2 Hello World 
 
-Read this tutorial and follow the instructions: https://docs.microsoft.com/en-us/azure/machine-learning/how-to-train-cli
+Read this tutorial and follow the instructions:<BR>
+https://docs.microsoft.com/en-us/azure/machine-learning/how-to-train-cli <BR>
 
 Clone the Repo:
 ```
