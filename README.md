@@ -1,6 +1,6 @@
 # Azure Machine Learning CLI V2 In a Day Workshop
 
-The aim of this workshop is to help customers to install and test AML CLI V2. The total workshop will take 1 to 2 hours to run.
+The aim of this workshop is to help customers to install and test AML CLI V2. The total time for this workshop is around 1 to 2 hours.
 
 ### Lab 1 - Install and set up the CLI (v2) - Time: 10 to 20 min
 
