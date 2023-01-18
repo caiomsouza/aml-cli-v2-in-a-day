@@ -53,12 +53,12 @@ az ml job create -f jobs/basics/hello-world.yml --web --resource-group cliv2demo
 
 Run NYC Taxi example 
 ```
-az ml job create -f jobs/pipelines/nyc-taxi/job.yml --web --resource-group cliv2demo --workspace-name cliv2amldemo
+az ml job create -f jobs/pipelines/nyc-taxi/pipeline.yml --web --resource-group cliv2demo --workspace-name cliv2amldemo
 ```
 
 Run CIFAR-10 example 
 ```
-az ml job create -f jobs/pipelines/cifar-10/job.yml --web --resource-group cliv2demo --workspace-name cliv2amldemo
+az ml job create -f jobs/pipelines/cifar-10/pipeline.yml --web --resource-group cliv2demo --workspace-name cliv2amldemo
 ```
 
 ### Learn more
