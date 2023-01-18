@@ -65,4 +65,15 @@ az ml job create -f jobs/pipelines/cifar-10/pipeline.yml --web --resource-group 
 https://github.com/Azure/azureml-examples <BR>
 https://caiomsouza.medium.com/azure-machine-learning-cli-2-0-v2-84fef15e7b9 <BR>
 https://techcommunity.microsoft.com/t5/azure-ai-blog/announcing-the-new-cli-and-arm-rest-apis-for-azure-machine/ba-p/2393447 <BR>
+
+  
+  
+### Lab 4 - Run a R Script - Time: 10 min
+
+Run Iris R example 
+```
+az ml job create -f jobs/single-step/r/iris/job.yml --web --resource-group cliv2demo --workspace-name cliv2amldemo
+  
+```
+  
   
