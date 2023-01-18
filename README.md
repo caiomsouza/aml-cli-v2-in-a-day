@@ -70,8 +70,13 @@ az ml job create -f jobs/single-step/r/iris/job.yml --web --resource-group cliv2
   
 ```
   
+Run Accidents R example 
+```
+az ml job create -f jobs/single-step/r/accidents/job.yml --web --resource-group cliv2demo --workspace-name cliv2amldemo
   
+```  
 
+  
 ### Learn more
 https://github.com/Azure/azureml-examples <BR>
 https://caiomsouza.medium.com/azure-machine-learning-cli-2-0-v2-84fef15e7b9 <BR>
