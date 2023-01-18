@@ -67,13 +67,11 @@ az ml job create -f jobs/pipelines/cifar-10/pipeline.yml --web --resource-group 
 Run Iris R example 
 ```
 az ml job create -f jobs/single-step/r/iris/job.yml --web --resource-group cliv2demo --workspace-name cliv2amldemo
-  
 ```
   
 Run Accidents R example 
 ```
 az ml job create -f jobs/single-step/r/accidents/job.yml --web --resource-group cliv2demo --workspace-name cliv2amldemo
-  
 ```  
 
   
